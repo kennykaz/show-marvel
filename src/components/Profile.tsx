@@ -16,8 +16,8 @@ export const Profile = (props: ProfileProps) => {
         <img src={`${hero.thumbnail.path}/standard_medium.${hero.thumbnail.extension}`} alt={hero.name} className={isInTeam ? 'leaderboard-picture selected' : 'leaderboard-picture'}/>
         <span className="leaderboard-name">{hero.name}</span>
         <span className="leaderboard-value">
-          {!isInTeam && <button className="actionButton add" onClick={() => onHeroAction(hero, 'add')}>Add Team Member</button>}
-          {isInTeam && <button className="actionButton remove" onClick={() => onHeroAction(hero, 'remove')}>Remove Team Member</button>}
+          {!isInTeam && <button className="actionButton add" onClick={() => onHeroAction(hero, 'add')}>Recruit Member</button>}
+          {isInTeam && <button className="actionButton remove" onClick={() => onHeroAction(hero, 'remove')}>Remove Member</button>}
         </span>
       </article>
     );

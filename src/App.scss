@@ -207,7 +207,8 @@ body {
   }
   & > div {
     border-radius: 12px;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -238,5 +239,18 @@ body {
   border: none;
   &:hover {
     color: black;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  /* For mobile phones: */
+  [class*="modal-window"] {
+    & > div {
+      max-width: 325px;
+      padding: 1.5em;
+    }
+  }
+  [class*="modal-close"] {
+    width: 100px;
   }
 }
